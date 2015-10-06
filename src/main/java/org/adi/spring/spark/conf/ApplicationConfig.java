@@ -1,4 +1,4 @@
-package com.nike.analytics.pricing.jigsaw.conf;
+package org.adi.spring.spark.conf;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaSparkContext;

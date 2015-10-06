@@ -1,6 +1,6 @@
-package com.nike.analytics.pricing.jigsaw;
+package org.adi.spring.spark;
 
-import com.nike.analytics.pricing.jigsaw.examples.WordCount;
+import org.adi.spring.spark.examples.WordCount;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
