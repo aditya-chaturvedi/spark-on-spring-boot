@@ -39,10 +39,10 @@ public class WordCount {
                 .reduceByKey((i1, i2) -> i1 + i2);
 
         // filter out words with less than threshold occurrences
-        JavaPairRDD<String, Integer> filtered = counts.filter(tup -> tup._2() >= threshold);
+        //JavaPairRDD<String, Integer> filtered = counts.filter(tup -> tup._2() >= threshold);
 
         // count characters
-        JavaPairRDD<Character, Integer> charCounts = filtered.flatMap(
+        JavaPairRDD<Character, Integer> charCounts = counts.flatMap(
                 s -> {
                     Collection<Character> chars = new ArrayList<>(s._1().length());
                     for (char c : s._1().toCharArray()) {
